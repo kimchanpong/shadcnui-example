@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .webkit-box-align {
+    -webkit-box-align: center;
+  }
+
+  .webkit-box-pack {
+    -webkit-box-pack: center;
+  }
+
+  .webkit-box-flex {
+    -webkit-box-flex: 1;
+  }
+
+  .webkit-tap-highlight-color {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .webkit-appearance {
+    -webkit-appearance: none;
+  }
+
+  .writing-mode {
+    writing-mode: horizontal-tb !important;
+  }
+
+  .bg-gray-hover {
+    background-color: rgba(200,200,200, 0.3);
+  }
+}

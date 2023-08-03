@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+    .listBox {
+        width: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .listBox {
+        width: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+    .listBox {
+        width: 50%;
+    }
+}
