@@ -5,6 +5,14 @@ import { HamburgerMenuIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false);
 
+    const toggleDrawer = () => () => {
+        // if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+        //   return;
+        // }
+
+        setIsOpen((prevState) => !prevState);
+    };
+
     const list = () => (
         <main>
             test
@@ -18,11 +26,13 @@ function NavBar() {
                     flex flex-col w-full box-border">
                 <div className="relative flex webkit-box-align items-center min-h-[64px] pl-[24px] pr-[24px]">
                     <button
+                        type="button"
                         className="inline-flex webkit-box-align items-center webkit-box-pack justify-center relative
                         box-border webkit-tap-highlight-color bg-transparent cursor-pointer select-none align-middle
                         webkit-appearance no-underline text-center flex-[0_0_auto] rounded-[50%] overflow-visible
                         duration-150 ease-in-out delay-0 transition-[background-color] ml-[-12px] p-[12px] text-[1.75rem]
                         mr-[16px]"
+                        onClick={() => setIsOpen(true)}
                     >
                         <HamburgerMenuIcon className="w-[0.8em] h-[0.8em]"/>
                     </button>
